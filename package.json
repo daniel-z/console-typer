@@ -1,0 +1,27 @@
+{
+  "name": "console-typer",
+  "version": "1.0.0",
+  "description": "Util written using pure javascript to give a terminal typing effect to any paragraph",
+  "main": "dist/console-typer.js",
+  "scripts": {
+    "test": "echo \"no tests yet\" && exit 0",
+    "build": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-z/console-typer.git"
+  },
+  "keywords": [
+    "console-typer",
+    "util",
+    "javascript",
+    "fun",
+    "terminal"
+  ],
+  "author": "Daniel Zamorano <daniel.zamorano.m@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-z/console-typer/issues"
+  },
+  "homepage": "https://github.com/daniel-z/console-typer#readme"
+}

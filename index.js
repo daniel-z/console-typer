@@ -1,4 +1,4 @@
-import ConsoleTyper from './src/console-typer.js';
+import ConsoleTyper from './dist/console-typer.js';
 
 const consoleTyper = new ConsoleTyper({
   paragraphElement: document.getElementsByClassName('intro-paragraph')[0],
