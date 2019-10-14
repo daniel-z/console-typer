@@ -13,8 +13,7 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
 
     # commit compressed files and push it to remote
     rm -f .gitignore
-    cp ../.travis/deployignore .gitignore
-    cd ../
+    cp .travis/deployignore .gitignore
 
     # git add $DEPLOY_FOLDER
     git status # debug
