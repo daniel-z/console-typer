@@ -75,6 +75,21 @@ a {
   width: 92%;
   height: 120px;
   display: block;
+  margin-top: 30px;
+  position: relative;
+}
+
+a.see-code {
+  padding: 4px 10px;
+  background-color: var(--blue-alpha);
+  color: var(--black);
+  text-transform: uppercase;
+  font-family: var(--title-ffamily);
+  font-size: 11px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  border-radius: 2px;
 }
 
 table {
