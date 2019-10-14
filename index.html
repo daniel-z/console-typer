@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script type="module" src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Cutive+Mono|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Console Typer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="content">
+      <h1>Console Typer</h1>
+      <h2><a href="https://www.danielzamorano.pro"> by daniel zamorano </a></h2>
+      <p id="terminal" class="intro-paragraph">
+        This is a funny util written using pure javascript to give a terminal typing effect to any paragraph.
+        This is a sample paragraph using it.
+      </p>
+      <table>
+        <caption>Options</caption>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Option</th>
+                <th>Description</th>
+            </tr>        
+        </thead>
+
+        <tbody>
+          <tr>
+              <td>loop</td>
+              <td>boolean</td>
+              <td>loop the effect after finish</td>
+          </tr>
+
+          <tr>
+            <td>loopAfterSeconds</td>
+            <td>number</td>
+            <td>seconds it waits before start restart the effect.(default: 6)</td>
+          </tr>
+
+          <tr>
+            <td>cursor</td>
+            <td>string</td>
+            <td>character to use as cursor (default: "I")</td>
+          </tr> 
+
+          <tr>
+            <td>stopCursorAfterBlinks</td> 
+            <td>number</td> 
+            <td>Number of blinks that the cursor will do before stop. default (10)</td> 
+          </tr> 
+
+          <tr>
+            <td>cursorAnimationSpeedMs</td> 
+            <td>number</td> 
+            <td>Speed of cursor blikn, miliseconds: (default: 500)</td> 
+          </tr> 
+
+          <tr>
+            <td>typingSpeedMs</td> 
+            <td>number</td> 
+            <td>Typing effect speed (deafult: 70)</td> 
+          </tr> 
+
+          <tr>
+            <td>onStartTyping()</td> 
+            <td>function</td> 
+            <td>Executes after starting typing</td> 
+          </tr> 
+
+          <tr>
+            <td>onStopTyping</td> 
+            <td>function</td> 
+            <td>Executes after stop typing</td> 
+          </tr> 
+
+          <tr>
+            <td>onStopCursorAnimation</td> 
+            <td>function</td> 
+            <td>executes after cursor animation stops</td> 
+          </tr> 
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
