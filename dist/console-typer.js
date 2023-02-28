@@ -1,27 +1,4 @@
 export default class ConsoleTyper {
-  defaultSettings = {
-    loop: true,
-    loopAfterSeconds: 6,
-    cursor: "I",
-    stopCursorAfterBlinks: 10,
-    cursorAnimationSpeedMs: 500,
-    typingSpeedMs: 70,
-    onStartTyping: () => {},
-    onStopTyping: () => {},
-    onStopCursorAnimation: () => {}
-  };
-
-  state = {
-    isTyping: false
-  };
-
-  libName = "ConsoleTyper";
-
-  errorMessages = {
-    notParagraph: `${this.libName}: please provide a valid paragraph element`,
-    notContent: `${this.libName}: please provide a paragraph with text`
-  };
-
   constructor(props) {
     const { paragraphElement } = props;
 
@@ -39,6 +16,30 @@ export default class ConsoleTyper {
     if (textToType.length === 0) {
       console.error(this.errorMessages.notContent);
     }
+
+
+    this.defaultSettings = {
+      loop: true,
+      loopAfterSeconds: 6,
+      cursor: "I",
+      stopCursorAfterBlinks: 10,
+      cursorAnimationSpeedMs: 500,
+      typingSpeedMs: 70,
+      onStartTyping: () => {},
+      onStopTyping: () => {},
+      onStopCursorAnimation: () => {}
+    };
+  
+    this.state = {
+      isTyping: false
+    };
+  
+    this.libName = "ConsoleTyper";
+  
+    this.errorMessages = {
+      notParagraph: `${this.libName}: please provide a valid paragraph element`,
+      notContent: `${this.libName}: please provide a paragraph with text`
+    };
 
     this.settings = Object.assign(
       { ...this.defaultSettings },
